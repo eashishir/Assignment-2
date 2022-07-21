@@ -155,6 +155,10 @@ a:hover {
     font-weight: 400;
 }
 
+.hi-display {
+    visibility: hidden;
+}
+
 .last-work {
     background-color: #161616;
     color: #FFFFFF;
@@ -244,7 +248,7 @@ li {
 /*---------
  media quries-------- */
 /* mobile Divices */
-@media screen and (max-width: 688px) {
+@media only screen and (max-width: 688px) {
     .container {
         width: 100%;
 
@@ -287,6 +291,10 @@ li {
         padding: 60px;
     }
 
+    .hi-display {
+        visibility: hidden;
+    }
+
 
 
     .last-work {
@@ -321,3 +329,57 @@ li {
 /*---------
  media quries-------- */
 /* Tablet Divices */
+@media only screen and (min-width:688px) and (max-width:922px) {
+    .container {
+        width: 100%;
+
+    }
+
+    .container-2 {
+        width: 100%;
+
+    }
+
+
+
+    .player-window {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .fixed {
+
+
+        align-items: center;
+        background-color: #FFFFFF;
+        padding: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Transfar {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 60px;
+    }
+
+    .hi-display {
+        visibility: visible;
+    }
+
+    .No-display {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
