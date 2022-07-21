@@ -159,10 +159,14 @@ a:hover {
     visibility: hidden;
 }
 
+#no-display {
+    visibility: hidden;
+}
+
 .last-work {
     background-color: #161616;
     color: #FFFFFF;
-    width: 861px;
+    width: 1400px;
     height: 400px;
     text-align: center;
     margin: 0;
@@ -292,7 +296,7 @@ li {
     }
 
     .hi-display {
-        visibility: hidden;
+        display: none;
     }
 
 
@@ -342,6 +346,8 @@ li {
 
 
 
+
+
     .player-window {
 
         flex-direction: column;
@@ -363,7 +369,7 @@ li {
     .Transfar {
         grid-template-columns: repeat(2, 1fr);
 
-        padding: 60px;
+        padding: 90px;
     }
 
     .hi-display {
@@ -374,6 +380,10 @@ li {
         display: none;
     }
 
+    #no-display {
+        visibility: visible;
+    }
+
     ul {
         display: flex;
 
@@ -381,5 +391,16 @@ li {
         justify-content: center;
     }
 
+    .Match {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .matchs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 24px;
+
+
+    }
 }
