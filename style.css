@@ -28,14 +28,26 @@ body {
     padding: 30px;
     border-radius: 5px;
     margin-top: 21px;
-    display: flex;
+
 
 
 }
 
-.container img {
-    width: 200px;
-    height: 320px;
+.container-2 {
+
+
+    background-color: #FFFFFF;
+    Width: 800px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+
+
+
+}
+
+.banner img {
+    width: 100%
 }
 
 .great {
@@ -60,7 +72,7 @@ h1 {
     color: #FFFFFF;
     border-radius: 5px;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 
@@ -111,6 +123,9 @@ a:hover {
     border-radius: 10px;
 }
 
+.player-window {
+    display: flex;
+}
 
 .Transfar {
     display: grid;
@@ -199,6 +214,10 @@ li {
 
 }
 
+.Match {
+    display: flex;
+}
+
 .matchs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -221,3 +240,84 @@ li {
     color: #4D4D4D;
     font-size: 12px;
 }
+
+/*---------
+ media quries-------- */
+/* mobile Divices */
+@media screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+
+    }
+
+    .container-2 {
+        width: 100%;
+
+    }
+
+    .header {
+
+        flex-direction: column;
+        align-items: center;
+        padding-left: 50px;
+
+
+
+
+    }
+
+    .player-window {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .fixed {
+
+
+        align-items: center;
+        background-color: #FFFFFF;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .Transfar {
+        grid-template-columns: repeat(1, 1fr);
+
+        padding: 60px;
+    }
+
+
+
+    .last-work {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding-right: 28px;
+    }
+
+    .Match {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .matchs {
+        grid-template-columns: repeat(1, 1fr);
+
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+
+}
+
+/*---------
+ media quries-------- */
+/* Tablet Divices */
