@@ -75,6 +75,10 @@ h1 {
     margin-top: 5px;
 }
 
+.button:hover {
+    background-color: #01D3B0;
+}
+
 
 
 .fixed {
